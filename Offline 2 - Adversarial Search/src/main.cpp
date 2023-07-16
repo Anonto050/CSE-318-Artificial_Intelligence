@@ -15,8 +15,33 @@ using namespace std;
 int main() {
     Board board;
 
-    Player player1(PLAYER_1, 5, AI_VS_AI, HEURISTIC_STORAGE);
-    Player player2(PLAYER_2, 12, AI_VS_AI, HEURISTIC_STORAGE);
+    // Take depths and heuristics from user
+    
+    int depth1, depth2, heuristic1, heuristic2;
+    cout << "Enter depth for player 1: ";
+    cin >> depth1;
+    cout << "Enter depth for player 2: ";
+    cin >> depth2;
+
+    // show list of heuristics
+    cout << "Heuristic list: " << endl;
+    cout << "1. Storage" << endl;
+    cout << "2. Bins" << endl;
+    cout << "3. Additional Moves" << endl;
+    cout << "4. Close Win" << endl;
+    cout << "5. Capture" << endl;
+    cout << "6. Extra Turn" << endl;
+
+    cout << "Enter heuristic for player 1: ";
+    cin >> heuristic1;
+    cout << "Enter heuristic for player 2: ";
+    cin >> heuristic2;
+
+    Player player1(PLAYER_1, depth1, AI_VS_AI, heuristic1);
+    Player player2(PLAYER_2, depth2, AI_VS_AI, heuristic2);
+
+    // Player player1(PLAYER_1, 6, AI_VS_AI, HEURISTIC_STORAGE);
+    // Player player2(PLAYER_2, 8, AI_VS_AI, HEURISTIC_STORAGE);
 
     int player_turn = PLAYER_1;
     int move;

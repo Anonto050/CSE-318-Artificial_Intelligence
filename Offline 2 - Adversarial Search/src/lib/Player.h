@@ -6,6 +6,10 @@
 #include <cmath>
 #include <vector>
 #include <string>
+#include <algorithm>        
+#include <random>
+#include <cstdlib>
+
 #include "Constants.h"
 #include "Board.h"
 #include "Heuristic.h"
@@ -85,6 +89,9 @@ class Player {
                 serialMaxBins.push_back(serialMaxBinsRest.at(i));
             }
 
+            // shuffle the serialMaxBins
+            random_shuffle(serialMaxBins.begin(), serialMaxBins.end());
+
             //apply alpha beta pruning
             for (int i = 0; i < NUM_BINS; i++) {
                 int presentMove = serialMaxBins.at(i);
@@ -133,7 +140,7 @@ class Player {
 
             //bins that have chances to give extra turn go to serialMinBins
             for(int i = 0; i < NUM_BINS; i++) {
-                if(currentBoard.getBin(opponent_id, i) == (NUM_BINS - i)) {
+                if(currentBoard.getBin(player_id, i) == (NUM_BINS - i)) {
                     serialMinBins.push_back(i);
                 }
                 else {
@@ -145,6 +152,9 @@ class Player {
             for(int i = 0; i < serialMinBinsRest.size(); i++) {
                 serialMinBins.push_back(serialMinBinsRest.at(i));
             }
+
+            // shuffle the serialMinBins
+            random_shuffle(serialMinBins.begin(), serialMinBins.end());
 
 
             //apply alpha beta pruning

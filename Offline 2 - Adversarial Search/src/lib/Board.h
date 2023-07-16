@@ -202,7 +202,7 @@ class Board {
 
     void print_board () {
         cout<<endl;
-        cout<<"     Player 2      "<<endl<<endl;
+        cout<<"                 Player 2      "<<endl<<endl;
 
         cout<<"   ";
         for (int i = NUM_BINS - 1; i >= 0; i--) {
@@ -212,7 +212,7 @@ class Board {
         cout<<endl;
         cout<<"   ";
         for (int i = NUM_BINS - 1; i >= 0; i--) {
-            cout << "  " << bins[PLAYER_2][i] << "  ";
+            cout << "   " << bins[PLAYER_2][i] << "   ";
         }
         cout<<endl; 
         cout<<storage[PLAYER_2];
@@ -221,12 +221,12 @@ class Board {
         for(int i = 0; i < NUM_BINS; i++) {
             cout<<"  ";
         }
-        cout<<"      ";
+        cout<<"          ";
         cout<<storage[PLAYER_1];
         cout<<endl;
         cout<<"   ";
         for (int i = 0; i < NUM_BINS; i++) {
-            cout << "  " << bins[PLAYER_1][i] << "  ";
+            cout << "   " << bins[PLAYER_1][i] << "   ";
         }
         cout<<endl;
         cout<<"   ";
@@ -235,7 +235,7 @@ class Board {
             cout << " < " << i << " > ";
         }
         cout<<endl<<endl;
-        cout<<"     Player 1      "<<endl<<endl;
+        cout<<"                 Player 1      "<<endl<<endl;
     }
 };
 
