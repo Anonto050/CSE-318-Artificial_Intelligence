@@ -4,7 +4,7 @@
 This project implements a decision tree learning algorithm for car evaluation based on the provided dataset. The goal is to build a decision tree classifier to predict the acceptability of cars based on their attributes. The project is implemented in Java.
 
 ## Problem Statement
-The problem statement and dataset details can be found in the [problem statement PDF](link_to_pdf). In summary, the dataset consists of various attributes related to car evaluation, such as buying price, maintenance cost, number of doors, etc., and the task is to classify cars into four categories: 'unacc' (unacceptable), 'acc' (acceptable), 'good', and 'vgood' (very good).
+The problem statement and dataset details can be found in the [problem statement PDF](https://github.com/Anonto050/CSE-318-Artificial_Intelligence/blob/main/Offline%204%20-%20Decision%20Tree/CSE318_%20Assignment%204.pdf). In summary, the dataset consists of various attributes related to car evaluation, such as buying price, maintenance cost, number of doors, etc., and the task is to classify cars into four categories: 'unacc' (unacceptable), 'acc' (acceptable), 'good', and 'vgood' (very good).
 
 ## Solution Highlights
 
