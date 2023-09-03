@@ -48,7 +48,7 @@ public class Node {
 
 The tree building process is a crucial part of the decision tree learning algorithm. It's responsible for constructing the decision tree that can be used for classification. Here's a step-by-step explanation of how the tree is built:
 
-1. **Selecting the Best Attribute**: The first step is to choose the best attribute for the current node. The "best" attribute is the one that provides the most information gain, which helps in making accurate classifications. The algorithm calculates the information gain for each attribute and selects the one with the highest value. This attribute becomes the attribute for the current node.
+- **Selecting the Best Attribute**: The first step is to choose the best attribute for the current node. The "best" attribute is the one that provides the most information gain, which helps in making accurate classifications. The algorithm calculates the information gain for each attribute and selects the one with the highest value. This attribute becomes the attribute for the current node.
 
     ```java
     String bestAttribute = null;
@@ -62,13 +62,13 @@ The tree building process is a crucial part of the decision tree learning algori
     }
     ```
 
-2. **Creating an Internal Node**: A new internal node is created with the selected attribute. This internal node will be a decision point in the tree, and its attribute helps in determining which branch to follow.
+- **Creating an Internal Node**: A new internal node is created with the selected attribute. This internal node will be a decision point in the tree, and its attribute helps in determining which branch to follow.
 
     ```java
     Node tree = new Node(bestAttribute, "");
     ```
 
-3. **Splitting into Branches**: For each possible value of the selected attribute, the algorithm creates a new branch. These branches represent different paths that the decision tree can take based on the attribute's value.
+- **Splitting into Branches**: For each possible value of the selected attribute, the algorithm creates a new branch. These branches represent different paths that the decision tree can take based on the attribute's value.
 
     ```java
     Set<String> attributeValues = examples.stream()
@@ -80,7 +80,7 @@ The tree building process is a crucial part of the decision tree learning algori
     }
     ```
 
-4. **Subset Creation**: For each branch, the algorithm creates a subset of examples that have the same value for the selected attribute. These subsets represent the data that will be considered for further tree building within that branch.
+- **Subset Creation**: For each branch, the algorithm creates a subset of examples that have the same value for the selected attribute. These subsets represent the data that will be considered for further tree building within that branch.
 
     ```java
     // Create a new subset of examples where the best attribute has the given value
@@ -89,19 +89,19 @@ The tree building process is a crucial part of the decision tree learning algori
         .collect(Collectors.toList());
     ```
 
-5. **Recursive Tree Building**: The tree-building process continues recursively for each branch. For each branch, the algorithm considers a subset of examples and a reduced set of attributes (excluding the attribute used at the current node). This recursive process builds subtrees for each branch.
+- **Recursive Tree Building**: The tree-building process continues recursively for each branch. For each branch, the algorithm considers a subset of examples and a reduced set of attributes (excluding the attribute used at the current node). This recursive process builds subtrees for each branch.
 
     ```java
     Node subtree = learnDecisionTree(subsetExamples, subsetAttributes, Class, examples);
     ```
 
-6. **Adding Branches to the Tree**: Each branch is attached to the current node as a child node. These branches represent different attribute values and the subtrees associated with them.
+- **Adding Branches to the Tree**: Each branch is attached to the current node as a child node. These branches represent different attribute values and the subtrees associated with them.
 
     ```java
     tree.addChild(attributeValue, subtree);
     ```
 
-7. **Return the Current Node**: The current node (with its attribute) represents the decision point based on the selected attribute. The algorithm continues building the tree until all branches have been processed.
+- **Return the Current Node**: The current node (with its attribute) represents the decision point based on the selected attribute. The algorithm continues building the tree until all branches have been processed.
 
     ```java
     return tree;
