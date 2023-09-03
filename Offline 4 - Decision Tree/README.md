@@ -44,7 +44,7 @@ public class Node {
     - `children`: Child nodes representing different attribute values.
 
 
-### Tree Building Process
+### Tree Building 
 
 The tree building process is a crucial part of the decision tree learning algorithm. It's responsible for constructing the decision tree that can be used for classification. Here's a step-by-step explanation of how the tree is built:
 
