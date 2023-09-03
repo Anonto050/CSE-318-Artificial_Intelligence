@@ -148,6 +148,4 @@ These code segments represent the core components of the decision tree learning 
 ## Dataset
 The dataset used in this project is provided in the `car_data.txt` file. The attributes and class values can be found in the `car_names.txt` file.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
 
