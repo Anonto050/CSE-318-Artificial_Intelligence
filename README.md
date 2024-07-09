@@ -10,26 +10,26 @@ This repository contains all the assignments, projects, and resources for the CS
 - [License](#license)
 
 ## Course Overview
-CSE-318 Artificial Intelligence covers the fundamental concepts and techniques of AI. The course includes topics such as search algorithms, knowledge representation, machine learning, and robotics. The main objective is to provide students with a strong foundation in AI and practical experience through assignments and projects.
+CSE-318 Artificial Intelligence covers the fundamental concepts and techniques of AI. The course includes topics such as search algorithms, knowledge representation, machine learning. The main objective is to provide students with a strong foundation in AI and practical experience through assignments.
 
 ## Assignments
 The assignments are designed to help students understand and apply AI concepts. Each assignment focuses on different aspects of AI, including:
 
-1. **Offline 1 - A* Algorithm**
-   - Problem Statement: [Offline 1 Problem Statement](Offline%201%20-%20A%20star%20algorithm/problem_statement.md)
-   - Solution: [Offline 1 Solution](Offline%201%20-%20A%20star%20algorithm/solution.md)
+1. **_Offline 1 - A\* Algorithm_**
+   - Problem Statement: [Offline 1 Problem Statement](/Offline%201%20-%20A%20star%20algorithm/Assignment1_N_puzzle.pdf)
+   - Solution: [Offline 1 Solution](/Offline%201%20-%20A%20star%20algorithm/NPuzzle.cpp)
 
-2. **Offline 2 - Adversarial Search**
-   - Problem Statement: [Offline 2 Problem Statement](Offline%202%20-%20Adversarial%20Search/problem_statement.md)
-   - Solution: [Offline 2 Solution](Offline%202%20-%20Adversarial%20Search/solution.md)
+2. **_Offline 2 - Adversarial Search_**
+   - Problem Statement: [Offline 2 Problem Statement](/Offline%202%20-%20Adversarial%20Search/Assignment-2-Adversarial-Search.pdf)
+   - Solution: [Offline 2 Solution](/Offline%202%20-%20Adversarial%20Search/src)
 
-3. **Offline 3 - Max Cut Problem**
-   - Problem Statement: [Offline 3 Problem Statement](Offline%203%20-%20Max%20Cut%20Problem/problem_statement.md)
-   - Solution: [Offline 3 Solution](Offline%203%20-%20Max%20Cut%20Problem/solution.md)
+3. **_Offline 3 - Max Cut Problem_**
+   - Problem Statement: [Offline 3 Problem Statement](/Offline%203%20-%20Max%20Cut%20Problem/Assignment_03_Max_Cut.pdf)
+   - Solution: [Offline 3 Solution](/Offline%203%20-%20Max%20Cut%20Problem/Offline%203)
 
-4. **Offline 4 - Decision Tree**
-   - Problem Statement: [Offline 4 Problem Statement](Offline%204%20-%20Decision%20Tree/problem_statement.md)
-   - Solution: [Offline 4 Solution](Offline%204%20-%20Decision%20Tree/solution.md)
+4. **_Offline 4 - Decision Tree_**
+   - Problem Statement: [Offline 4 Problem Statement](/Offline%204%20-%20Decision%20Tree/CSE318_%20Assignment%204.pdf)
+   - Solution: [Offline 4 Solution](/Offline%204%20-%20Decision%20Tree/Offline%204)
 
 You can find the detailed instructions and submission guidelines for each assignment in the respective folders.
 
